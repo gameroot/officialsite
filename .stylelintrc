@@ -1,0 +1,55 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": [
+    "./bin/script/lint/strict_color_rule.js"
+  ],
+  "rules": {
+    "color-named": "never",
+    "color-hex-length": null,
+    "color-hex-case": null,
+    "no-missing-end-of-source-newline": null,
+    "hansight/strict-color": true,
+    "selector-type-no-unknown": [ true, {
+      "ignoreTypes": [
+        "hs-icon",
+        "hs-i18n",
+        "hs-tree",
+        "hs-tree-node",
+        "hs-spinner",
+        "hs-progress",
+        "hs-switch",
+        "hs-typeahead",
+        "hs-dropdown",
+        "hs-pagination",
+        "hs-datetime-picker",
+        "hs-time-picker-inline",
+        "hs-date-picker-inline",
+        "hs-dashboard-time-picker",
+        "ace-editor",
+        "hs-halite-gui-editor",
+        "hs-halite-gui-editor-filter",
+        "hs-hal-editor",
+        "hs-halite-editor",
+        "hs-button",
+        "hs-checkbox",
+        "hs-radio",
+        "hs-table",
+        "hs-message",
+        "color-picker",
+        "hs-step",
+        "hs-select",
+        "hs-select-match",
+        "hs-select-choice",
+        "hs-transfer",
+        "hs-card-table",
+        "hs-card-table-th",
+        "hs-card-table-td",
+        "hs-card-table-expand",
+        "hs-rich-text-editor"
+      ]
+    }],
+    "no-descending-specificity": null,
+    "string-quotes": "single",
+    "selector-pseudo-element-colon-notation": "single"
+  }
+}
