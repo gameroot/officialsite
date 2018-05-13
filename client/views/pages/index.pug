@@ -1,4 +1,14 @@
 extends ../layout.pug
 
+block pageCss
+  if pageCss.index
+    link(type="text/css" rel="stylesheet" href=pageCss.index)
+
 block content
+  h1 #{locale._global.title}  #{locale.index.pageTitle}
   p this is a demo
+  button(class="btn btn-primary") button
+
+block pageScript
+  if pageJs.index
+    script(src=pageJs.index)

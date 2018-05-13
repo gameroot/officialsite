@@ -11,7 +11,7 @@ const loaderModuleDirs = [ path.join(__dirname, '../../node_modules') ];
 const outputDir = path.join(__dirname, '../../.tmp/js');
 
 const webpackConfig = {
-  entry: path.join(__dirname, '../../client/js/index.js'),
+  entry: path.join(__dirname, '../../client/js/base.js'),
   mode: 'development',
   output: {
     path: outputDir
@@ -58,11 +58,34 @@ async function compile(compileConfig, outputName) {
   });
 
   console.log('Generate JS', compileConfig.output.filename);
-  return 'js/' + outputName + '.js';
+  return '/js/' + outputName + '.js';
 }
 
-const files = { entry: null, main: null, loader: null };
 module.exports = async function bundle(changedFile = null) {
-  await compile(webpackConfig, 'main');
-  return files;
+  await fs.ensureDir(outputDir);
+
+  // compile base js
+  let file =  await compile(webpackConfig, 'main');
+
+  // compile page js
+  const pageFileMap = {};
+  let pages = fs.readdirSync(path.join(config.root, 'client/js/pages'));
+  if (pages && pages.length > 0) {
+    for (let index = 0; index < pages.length; index ++) {
+      const page = pages[index];
+      const filePath = path.join(config.root, 'client/js/pages', page);
+      const stats = fs.statSync(filePath);
+      if (stats.isFile) {
+        let fileWebpackConfig = Object.assign({}, webpackConfig, {
+          entry: filePath
+        });
+        pageFileMap[page.replace('.js', '')] = await compile(fileWebpackConfig, page.replace('.js', ''));
+      }
+    }
+  }
+
+  return {
+    baseFile: file,
+    pageFile: pageFileMap
+  };
 };
