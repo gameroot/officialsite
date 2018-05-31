@@ -21,7 +21,7 @@ app.use(koaBody());
 
 app.use(mount('/js', static(path.join(__dirname, '../.tmp/js'))));
 app.use(mount('/css', static(path.join(__dirname, '../.tmp/css'))));
-app.use(mount('/asset', static(path.join(__dirname, '../.tmp/asset'))));
+app.use(mount('/asset', static(path.join(__dirname, '../client/asset'))));
 
 app.use(routes);
 

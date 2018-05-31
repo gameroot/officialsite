@@ -4,27 +4,23 @@ const fs = require('fs-extra');
 const LessPluginCleanCSS = require('less-plugin-clean-css');
 const config = require('config');
 
-const outputDir = path.join(__dirname, '../../.tmp/css');
+const outputDir = path.join(__dirname, '../../dist/css');
 
 async function _render(file, outputName) {
   const result = await new Promise(resolve => {
     less.render(file, {
       paths: [ path.join(__dirname, '../../client/less') ],
-      plugins: [],
-      sourceMap: {
-        sourceMapBasepath: path.join(__dirname, '../../client/less'),
-        sourceMapURL: `${outputName}.css.map`
-      }
+      plugins: [new LessPluginCleanCSS({ advanced: true })],
+      sourceMap: false
     }).then(resolve, resolve);
   });
 
   if (!result.css) return result;
   
 
-  fs.writeFileSync(path.join(outputDir, `${outputName}.css`), result.css);
-  fs.writeFileSync(path.join(outputDir, `${outputName}.css.map`), result.map);
+  fs.writeFileSync(path.join(outputDir, `${outputName}.min.css`), result.css);
 
-  return `/css/${outputName}.css`;
+  return `/css/${outputName}.min.css`;
 }
 
 module.exports = async function compile(changedFile = null) {

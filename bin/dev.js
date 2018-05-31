@@ -36,12 +36,12 @@ async function dev() {
     (async function () {
       changeBusy = true;
       const ext = path.extname(file);
-      if ('.htm' === ext) {
-        await genHtml(cacheFiles);
+      if ('.htm' === ext || '.pug' === ext) {
+        await genHtml(...cacheFiles);
       } else if ('.less' === ext) {
-        await genLess(file);
+        cacheFiles[1] = await genLess(file);
       } else if (['.js', '.html'].indexOf(ext) >= 0) {
-        await genJs(file);
+        cacheFiles[0] = await genJs(file);
       }
 
       changeBusy = false;

@@ -4,7 +4,7 @@ const config = require('config');
 const fs = require('fs-extra');
 
 const localeMap = require('./locale');
-const renderFile = require('./renderModules');
+const renderFile = require('./renderModules_build');
 
 function renderPage(page, FilesMap) {
   const stats = fs.statSync(path.join(config.root, 'client/views/pages', page));
@@ -12,8 +12,8 @@ function renderPage(page, FilesMap) {
     config.locales.forEach(locale => {
       let renderFilesMap = Object.assign({locale: localeMap[locale]}, FilesMap);
       const result = pug.compileFile(path.join(config.root, 'client/views/pages', page))(renderFilesMap);
-      fs.ensureDirSync(path.join(config.root, '.tmp/pages', locale));
-      fs.writeFileSync(path.join(config.root, '.tmp/pages', locale, page.replace('.pug', '.html')), result);
+      fs.ensureDirSync(path.join(config.root, 'dist/pages', locale));
+      fs.writeFileSync(path.join(config.root, 'dist/pages', locale, page.replace('.pug', '.html')), result);
     });
   }
 }

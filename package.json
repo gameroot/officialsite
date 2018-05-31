@@ -4,7 +4,8 @@
   "description": "the framework for developing web application",
   "main": "index.js",
   "scripts": {
-    "dev": "node ./bin/index.js dev"
+    "dev": "node ./bin/index.js dev",
+    "build": "node ./bin/index.js build"
   },
   "author": "ShadowWood",
   "license": "ISC",
