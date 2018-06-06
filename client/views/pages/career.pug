@@ -1,1 +1,71 @@
 extends ../layout.pug
+
+block pageCss
+  if pageCss.career
+    link(type="text/css" rel="stylesheet" href=pageCss.career)
+
+block content
+  section(class="overview")
+    div(class="container")
+      div(class="title") 在GAMEROOT工作
+      div(class="intro") 快来加入我们的才华横溢的团队，我们希望充满激情的人们帮助我们构建GAMEROOT，重新定义游戏与人的关系的区块链应用。
+
+  section(class="about-us")
+    div(class="container")
+      div(class="section-title") 关于我们
+      div(class="describe")
+        p 我们是一个坚信机会均等的公司，对创造安全，多样，包容的环境充满热情。我们的团队规模很小（但完美组建），分布在世界各地的许多地方。我们对未来有很多激动人心的计划，并正在寻找合适的人来帮助我们将其变为现实！
+
+      span(class="interval") “
+      div(class="word-part")
+        div(class="words") 我们设计过程的很大一部分是关于验证和确定细节，但加快上市速度也是关键。我们一起致力于帮助您将每一次数字体验变得更好。
+        span(class="creator-name") Gameroot创始人FRANK LEE
+  section(class="describe")
+    div(class="container")
+      div(class="section-title") 加入我们的团队，改变虚拟物品的交易方式。
+      div(class="content-part")
+        div(class="left-part")
+          div(class="mes-group")
+            img(src="/asset/join_us/location.svg")
+            span(class="title") 自由选择工作地点
+            span(class="words") 谁说你需要搬家才能进入新公司工作？不是我们。我们知道很棒的人才分散在各地，所以我们采用完全的分布式办公模式。让团队成员在舒适的环境中做好工作。
+
+          div(class="mes-group")
+            img(src="/asset/join_us/gift.svg")
+            span(class="title") 工资和晋升
+            span(class="words") 我们是一个有引导心态的创业公司，我们非常重视我们有才华的团队。这对你意味着什么？高度竞争力的薪酬和优秀的晋升渠道，可以让您尽早了解未来和明天。
+
+        div(class="right-part")
+          div(class="mes-group")
+            img(src="/asset/join_us/health.svg")
+            span(class="title") 健康与保健
+            span(class="words") 我们拥有覆盖范围广泛的个人医疗保险，以帮助您保持健康并充满青春活力。爱你的工作，但不要在这个过程中忽略你自己！
+
+          div(class="mes-group")
+            img(src="/asset/join_us/study.svg")
+            span(class="title") 学习和成长
+            span(class="words") 学习是一种生活方式。我们希望您对最新的趋势和我们行业的技术保持旺盛的求知欲。我们提供慷慨的设备津贴和会议/旅行预算给团队成员！
+
+  section(class="jobs")
+    div(class="container")
+      div(class="section-title") 在招职位
+      div(class="jobs-list row")
+        div(class="job-part col-4")
+          div(class="card")
+            div(class="name") 产品设计师
+            a(href="#" class="link") 了解详情
+
+        div(class="job-part col-4")
+          div(class="card")
+            div(class="name") 产品设计师
+            a(href="#" class="link") 了解详情
+
+        div(class="job-part col-4")
+          div(class="card")
+            div(class="name") 产品设计师
+            a(href="#" class="link") 了解详情
+
+        div(class="job-part col-4")
+          div(class="card")
+            div(class="name") 产品设计师
+            a(href="#" class="link") 了解详情

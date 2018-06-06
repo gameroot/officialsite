@@ -1,0 +1,218 @@
+body > .content {
+  > .overview {
+    background-image: url('/asset/join_us/bg.png');
+    background-size: cover;
+    height: 100vh;
+    max-height: 1200px;
+    min-height: 900px;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(-180deg,#424E66 0%, fade(#424e66, 0) 80%);
+      z-index: 1;
+    }
+
+    > .container {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      padding-top: 20%;
+      display: flex;
+      flex-direction: column;
+      color: #ffffff;
+
+      > .title {
+        width: 100%;
+        font-weight: 400;
+        font-size: 64px;
+        margin-bottom: 8%;
+        text-align: center;
+      }
+
+      > .intro {
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+  }
+
+  
+  > .about-us {
+    height: 100vh;
+    max-height: 1200px;
+    min-height: 900px;
+    position: relative;
+    color: #ffffff;
+    background-image: linear-gradient(-195deg, #424E66 0%, #2F3748 36%, #181C26 100%);
+
+    > .container {
+      height: 100%;
+      position: relative;
+      padding: 7% 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      > .describe {
+        margin-bottom: 30px;
+        width: 100%;
+
+        > p {
+          font-size: 18px;
+          text-align: center;
+        }
+      }
+
+      > .interval {
+        font-size: 144px;
+        width: 100%;
+        text-align: center;
+        height: 83px;
+        color: #02adff;
+      }
+
+      > .word-part {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        > .words {
+          font-size: 24px;
+          width: 100%;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        > .creator-name {
+          font-size: 14px;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  > .describe {
+    height: 100vh;
+    max-height: 1200px;
+    min-height: 900px;
+    position: relative;
+    color: #ffffff;
+    background-image: linear-gradient(-187deg, #1A202E 0%, #0D1019 100%);
+  
+    > .container {
+      height: 100%;
+      position: relative;
+      padding: 5% 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      > .content-part {
+        display: flex;
+        flex: 1;
+        margin-top: 8%;
+
+        > .left-part,
+        > .right-part {
+          flex:1;
+          display: flex;
+          flex-direction: column;
+  
+          > .mes-group {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+  
+            > img {
+              height: 112px;
+              width: 112px;
+            }
+  
+            > .title {
+              font-size: 36px;
+              font-weight: 400;
+            }
+  
+            > .words {
+              font-size: 18px;
+              height: 120px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  > .jobs {
+    height: auto;
+    position: relative;
+    color: #ffffff;
+    background-image: linear-gradient(-211deg, #2F3647 4%, #1B202B 100%);
+  
+    > .container {
+      height: 100%;
+      position: relative;
+      padding: 7% 0;
+
+      > .jobs-list {
+        margin-top: 80px;
+
+        > .job-part {
+          padding: 16px;
+
+          > .card {
+            box-shadow: 0 5px 20px 0 rgba(0,0,0,0.04);
+            border-radius: 8px;
+            position: relative;
+            height: 302px;
+            width: 307px;
+            padding: 44px 38px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: #ffffff;
+            background-image: linear-gradient(-180deg, #16171E 0%, #000000 100%);
+
+            &:before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 1;
+              width: 100%;
+              height: 100%;
+              border-radius: 8px;
+              opacity: 0.5;
+              background-image: linear-gradient(-180deg, #16171E 0%, #000000 100%);
+            }
+
+            > .name {
+              position: relative;
+              font-size: 32px;
+              z-index: 2;
+            }
+
+            > .link {
+              position: relative;
+              z-index: 2;
+              font-size: 18px;
+              color: #02adff;
+              height: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

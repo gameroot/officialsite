@@ -1,42 +1,54 @@
-body > nav.navbar {
-  background-color: transparent !important;
-  position: absolute;
+body > .header-container {
+  display: flex;
+  justify-content: center;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  padding: 0 14%;
   height: 94px;
+  z-index: 99;
+  width: 100%;
+  // background-color: transparent !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
 
-  > .navbar-brand {
-    display: inline-flex;
-    align-items: center;
+body > .header-container > .container {
+  > nav.navbar {
+    background-color: transparent !important;
+    width: 100%;
+    height: 100%;
 
-    > span {
-      font-size: 30px;
-      color: #ffffff;
-      margin-left: 10px;
-    }
-  }
-
-  > div.collapse {
-    justify-content: flex-end;
-
-    > ul.navbar-nav {
+    > .navbar-brand {
+      display: inline-flex;
+      align-items: center;
   
-  
-      > li.nav-item {
-        > a {
-          color: #ADC5F2;
-        }
-  
-        &.active > a {
-          color: #546497;
-        }
-
-        &.dropdown {
-          margin-left: 20px;
-        }
+      > span {
+        font-size: 30px;
+        color: #ffffff;
+        margin-left: 10px;
       }
     }
-  } 
+  
+    > div.collapse {
+      justify-content: flex-end;
+  
+      > ul.navbar-nav {
+    
+    
+        > li.nav-item {
+          > a {
+            color: #ADC5F2;
+          }
+    
+          &.active > a {
+            color: #546497;
+          }
+  
+          &.dropdown {
+            margin-left: 20px;
+          }
+        }
+      }
+    } 
+  }
 }
+

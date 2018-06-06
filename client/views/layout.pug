@@ -12,30 +12,32 @@ html
     block pageCss
   body
     //- header
-    nav(class="navbar navbar-expand-lg navbar-light bg-light")
-      a(class="navbar-brand" href="#")
-        img(src="/asset/logo.svg" height="40" alt="")
-        span GameRoot
-      button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation")
-        span(class="navbar-toggler-icon")
+    div(class="header-container")
+      div(class="container")
+        nav(class="navbar navbar-expand-lg navbar-light bg-light")
+          a(class="navbar-brand" href="#")
+            img(src="/asset/logo.svg" height="40" alt="")
+            span GameRoot
+          button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation")
+            span(class="navbar-toggler-icon")
 
-      div(class="collapse navbar-collapse" id="navbarNavDropdown")
-        ul(class="navbar-nav")
-          li(class="nav-item active")
-            a(class="nav-link" href="#") HOME
-              span(class="sr-only") (current)
-          li(class="nav-item")
-            a(class="nav-link" href="#") UPDATE
-          li(class="nav-item")
-            a(class="nav-link" href="#") COMMUNITY
-          li(class="nav-item")
-            a(class="nav-link" href="#") CAREER
-          li(class="nav-item dropdown")
-            a(class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") 中文
-            div(class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink")
-              a(class="dropdown-item" href="#") En
-              a(class="dropdown-item" href="#") 韩文
-              a(class="dropdown-item" href="#") 日文
+          div(class="collapse navbar-collapse" id="navbarNavDropdown")
+            ul(class="navbar-nav")
+              li(class="nav-item active")
+                a(class="nav-link" href="#") HOME
+                  span(class="sr-only") (current)
+              li(class="nav-item")
+                a(class="nav-link" href="#") UPDATE
+              li(class="nav-item")
+                a(class="nav-link" href="#") COMMUNITY
+              li(class="nav-item")
+                a(class="nav-link" href="#") CAREER
+              li(class="nav-item dropdown")
+                a(class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") 中文
+                div(class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink")
+                  a(class="dropdown-item" href="#") En
+                  a(class="dropdown-item" href="#") 韩文
+                  a(class="dropdown-item" href="#") 日文
 
     div(class="content")
       block content
