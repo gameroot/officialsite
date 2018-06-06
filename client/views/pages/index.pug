@@ -5,12 +5,121 @@ block pageCss
     link(type="text/css" rel="stylesheet" href=pageCss.index)
 
 block content
-  h1 #{locale._global.title}  #{locale.index.pageTitle}
-  p this is a demo
-  button(class="btn btn-primary") button
+  //- section1 overview
+  section(class="overview-section")
+    div(class="container")
+      div(class="overview-content")
+        h2(class="overview-title") 基于区块链的稀有游戏道具、资产交易和内容分发平台
+        span(class="overview-subtitle") 便捷上链，开放交易，去中心化分发
+        div(class="contact-group")
+          div
+            a(role="button" class="btn btn-primary btn-email") 留下邮箱
+          span(class="plus-contact")
+            span(class="telegram")
+              a
+                img(src="/asset/telegram.svg")
+              span 加入我们的telegram
 
-  img(src="/asset/6.jpg")
+            a
+              img(src="/asset/twitter.svg")
+            a 
+              img(src="/asset/github.svg")
+            a 
+              img(src="/asset/weibo.svg")
+            a 
+              img(src="/asset/facebook.svg")
+      img(class="overview-img" src="/asset/index_overview.png")
 
-block pageScript
-  if pageJs.index
-    script(src=pageJs.index)
+  //- section2 intro
+  section(class="intro-section")
+    div(class="container")
+      div(class="row")
+        div(class="image-preview col-6")
+          img(src="/asset/index_intro.png")
+          div(class="annotation-group")
+            span(class="annotation-item sdk") GameRoot SDK
+            span(class="annotation-item vitual") 虚拟物品
+            span(class="annotation-item creator") 游戏开发商
+            span(class="annotation-item game") 游戏
+            span(class="annotation-item market") GameRoot 交易市场
+            
+
+        div(class="intro-group col-6")
+          h3(class="title")
+            span(class="important") GameRoot 
+            span 是什么
+
+          span(class="subtitle") 数字化所有权的新模式，赋予游戏玩家和内容创作者权力。
+
+          p(class="words")  Game Root 智能合约 SDK，方便游戏开发者将部分“稀有”游戏道具等数字资产实现“一键上链”、在 Game Root 平台进行交易转让，打破单一游戏／平台内交易的封闭性，盘活玩家的“沉没游戏资产”。同时搭建基于IPFS的去中心化分发平台，让游戏内容的分发更加公平。
+
+  //- section3 value
+  section(class="value-section")
+    div(class="container")
+      div(class="for-player")
+        div(class="part-title") 对玩家的价值
+        div(class="row")
+          div(class="value-item col")
+            img(class="pre-image img1" src="/asset/for_player1.png")
+            div(class="words-part")
+              div(class="value-item-title") 真正的拥有权
+              div(class="value-item-content") 
+                p 数字资产的真实拥有权，在去中心化的区块链上可永久追踪。
+                p 数字资产永远属于用户，它无法被拿走或取消，这个权利不该被开发者所剥夺。
+
+
+          div(class="value-item col")
+            img(class="pre-image img2" src="/asset/for_player2.png")
+            div(class="words-part")
+              div(class="value-item-title") 真实性
+              div(class="value-item-content")
+                p 我们不应该盲目的相信某个道具是罕见的，基于区块链的资产使得发行规则透明化，无需信任发行人，从而使发行数据绝对的可信。
+
+          div(class="value-item col")
+            img(class="pre-image img3" src="/asset/for_player3.png")
+            div(class="words-part")
+              div(class="value-item-title") 可转让性
+              div(class="value-item-content") 
+                p 限量版和稀有物品的可转让性让资产变得更有价值；
+                p 玩家可以为兴趣收集物品也可以通过交易物品赚取利润，而不存在欺诈风险；降低了玩家转换游戏时的巨大沉没成本。
+
+      div(class="for-devloper")
+        div(class="part-title") 对开发者的价值
+        div(class="row")
+          div(class="value-item col-6")
+            span(class="pre-image-bg")
+              img(class="pre-image" src="/asset/for_devloper1.svg")
+            div(class="content")
+              div(class="sub-title") 创新的商业模式
+              div(class="describe") IGO预售限量道具/物品,和玩家社区共建繁荣的游戏经济
+
+          div(class="value-item col-6")
+            span(class="pre-image-bg")
+              img(class="pre-image" src="/asset/for_devloper2.svg")
+            div(class="content")
+              div(class="sub-title") 开放的开发者生态
+              div(class="describe") 不限制开发者选择主链和开发平台，不绑定游戏发行渠道，不约束游戏内的经济模型设计
+
+          div(class="value-item col-6")
+            span(class="pre-image-bg")
+              img(class="pre-image" src="/asset/for_devloper3.svg")
+            div(class="content")
+              div(class="sub-title") 利益共享
+              div(class="describe") “玩家-开发者-平台”共同分享交易平台和游戏的成长红利，使得三方间的经济关系得以重构
+
+          div(class="value-item col-6")
+            span(class="pre-image-bg")
+              img(class="pre-image" src="/asset/for_devloper4.svg")
+            div(class="content")
+              div(class="sub-title") 打破游戏和平台间的经济壁垒
+              div(class="describe") 提高游戏资产流通性，打破交易限制，实现游戏世界贸易全球化，从而提高游戏的LTV
+
+  //- section4 creating  TODO
+  section(class="creating-section")
+    div(class="container")
+      div(class="title") 我们正在创造
+      img(class="we-building-img" src="/asset/we_building_zh_cn.png")
+
+  //- section5 partner
+  section(class="partner-section")
+    div(class="container")

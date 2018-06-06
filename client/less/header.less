@@ -1,3 +1,42 @@
-h1 {
-  color: red;
+body > nav.navbar {
+  background-color: transparent !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 14%;
+  height: 94px;
+
+  > .navbar-brand {
+    display: inline-flex;
+    align-items: center;
+
+    > span {
+      font-size: 30px;
+      color: #ffffff;
+      margin-left: 10px;
+    }
+  }
+
+  > div.collapse {
+    justify-content: flex-end;
+
+    > ul.navbar-nav {
+  
+  
+      > li.nav-item {
+        > a {
+          color: #ADC5F2;
+        }
+  
+        &.active > a {
+          color: #546497;
+        }
+
+        &.dropdown {
+          margin-left: 20px;
+        }
+      }
+    }
+  } 
 }

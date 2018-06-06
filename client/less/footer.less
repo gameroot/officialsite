@@ -1,0 +1,106 @@
+body > .footer {
+  height: 80vh;
+  min-height: 720px;
+  background-color: #10131B;
+  // background-color: blue;
+  position: relative;
+  overflow: hidden;
+
+  > .container {
+    height: 100%;
+    position: relative;
+
+    > .part-title {
+      color: #ffffff;
+      position: relative;
+      font-size: 48px;
+      font-weight: 400;
+      top: 10%;
+      height: 90px;
+      width: 100%;
+      text-align: center;
+      padding-top: 28px;
+  
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: ~ 'calc(50% - 44px)';
+        width: 88px;
+        height: 8px;
+        background-image: linear-gradient(90deg, #008AD4 0%, #4748FF 100%);
+      }        
+    }
+  
+    > .subscribe-group {
+      position: relative;
+      width: 80%;
+      left: 10%;
+      height: 56px;
+      top: 20%;
+
+      > .email-input {
+        width: 100%;
+        position: relative;
+        border-radius: 100px;
+        height: 56px;
+        color: #ffffff;
+        font-size: 18px;
+        padding: 10px 40px;
+        background-color: rgba(0, 0, 0, 0.72);
+        outline: none;
+        border: none;
+      }
+
+      > .btn-subscribe {
+        height: 56px;
+        text-align: center;
+        padding: 10px 40px;
+        background-image: linear-gradient(90deg, #008AD4 0%, #4748FF 100%);
+        color: #ffffff;
+        font-size: 24px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 100px;
+      }
+    }
+
+    > .community-group {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      position: relative;
+      top: 30%;
+
+      > a > img {
+        height: 45px;
+        width: 45px;
+        margin-right: 10px;
+      }
+    }
+
+    > .copyright {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      color: #ffffff;
+      height: 200px;
+      position: relative;
+      top: 30%;
+    }
+
+    > .footer-bg {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 0;
+    }
+  }
+
+}
