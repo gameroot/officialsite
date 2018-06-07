@@ -1,3 +1,16 @@
 {
-  "title": "标题"
+  "header": {
+    "home": "主页",
+    "update": "更新",
+    "community": "社区",
+    "career": "职位"
+  },
+
+  "lanUsed": "中文",
+
+  "footer": {
+    "title": "隨時關注我們的更新",
+    "placeholder": "郵箱......",
+    "subscribe": "訂閱"
+  }
 }

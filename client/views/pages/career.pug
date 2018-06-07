@@ -7,20 +7,19 @@ block pageCss
 block content
   section(class="overview")
     div(class="container")
-      div(class="title") 在GAMEROOT工作
-      div(class="intro") 快来加入我们的才华横溢的团队，我们希望充满激情的人们帮助我们构建GAMEROOT，重新定义游戏与人的关系的区块链应用。
+      div(class="title") #{locale.career.title}
+      div(class="intro") #{locale.career.intro.p1}<br/>#{locale.career.intro.p2}
+  //- section(class="about-us")
+  //-   div(class="container")
+  //-     div(class="section-title") 关于我们
+  //-     div(class="describe")
+  //-       p 我们是一个坚信机会均等的公司，对创造安全，多样，包容的环境充满热情。我们的团队规模很小（但完美组建），分布在世界各地的许多地方。我们对未来有很多激动人心的计划，并正在寻找合适的人来帮助我们将其变为现实！
 
-  section(class="about-us")
-    div(class="container")
-      div(class="section-title") 关于我们
-      div(class="describe")
-        p 我们是一个坚信机会均等的公司，对创造安全，多样，包容的环境充满热情。我们的团队规模很小（但完美组建），分布在世界各地的许多地方。我们对未来有很多激动人心的计划，并正在寻找合适的人来帮助我们将其变为现实！
-
-      span(class="interval") “
-      div(class="word-part")
-        div(class="words") 我们设计过程的很大一部分是关于验证和确定细节，但加快上市速度也是关键。我们一起致力于帮助您将每一次数字体验变得更好。
-        span(class="creator-name") Gameroot创始人FRANK LEE
-  section(class="describe")
+  //-     span(class="interval") “
+  //-     div(class="word-part")
+  //-       div(class="words") 我们设计过程的很大一部分是关于验证和确定细节，但加快上市速度也是关键。我们一起致力于帮助您将每一次数字体验变得更好。
+  //-       span(class="creator-name") Gameroot创始人FRANK LEE
+  //- section(class="describe")
     div(class="container")
       div(class="section-title") 加入我们的团队，改变虚拟物品的交易方式。
       div(class="content-part")
@@ -48,7 +47,7 @@ block content
 
   section(class="jobs")
     div(class="container")
-      div(class="section-title") 在招职位
+      div(class="section-title") #{locale.career.jobsSec.title}
       div(class="jobs-list row")
         div(class="job-part col-4")
           div(class="card")

@@ -17,27 +17,25 @@ html
         nav(class="navbar navbar-expand-lg navbar-light bg-light")
           a(class="navbar-brand" href="#")
             img(src="/asset/logo.svg" height="40" alt="")
-            span GameRoot
           button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation")
             span(class="navbar-toggler-icon")
 
           div(class="collapse navbar-collapse" id="navbarNavDropdown")
             ul(class="navbar-nav")
               li(class="nav-item active")
-                a(class="nav-link" href="#") HOME
+                a(class="nav-link" href="#") #{locale._global.header.home}
                   span(class="sr-only") (current)
               li(class="nav-item")
-                a(class="nav-link" href="#") UPDATE
+                a(class="nav-link" href="#") #{locale._global.header.update}
               li(class="nav-item")
-                a(class="nav-link" href="#") COMMUNITY
+                a(class="nav-link" href="#") #{locale._global.header.community}
               li(class="nav-item")
-                a(class="nav-link" href="#") CAREER
+                a(class="nav-link" href="#") #{locale._global.header.career}
               li(class="nav-item dropdown")
-                a(class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") 中文
+                a(class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") #{locale._global.lanUsed}
                 div(class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink")
                   a(class="dropdown-item" href="#") En
-                  a(class="dropdown-item" href="#") 韩文
-                  a(class="dropdown-item" href="#") 日文
+                  a(class="dropdown-item" href="#") 中文
 
     div(class="content")
       block content
@@ -50,10 +48,10 @@ html
     div(class="footer")
       div(class="container")
         img(class="footer-bg" src="/asset/footer_bg.svg")
-        div(class="part-title") 随时关注我们的更新
+        div(class="part-title") #{locale._global.footer.title}
         div(class="subscribe-group")
-          input(class="email-input" placeholder="邮箱...")
-          button(class="btn btn-subscribe") 订阅
+          input(class="email-input" placeholder=locale._global.footer.placeholder)
+          button(class="btn btn-subscribe") #{locale._global.footer.subscribe}
 
         div(class="community-group")
           a
