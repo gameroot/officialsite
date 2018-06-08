@@ -1,22 +1,12 @@
 .idea
 node_modules
-build
 dist
-release
 .tmp
 **/.DS_Store
 .vscode
 bower_components
 **/*.css
 yarn.lock
-/dev.custom.config.js
-
-.antlr
-**/*.tokens
-**/*.interp
-HALParser.js
-HALLexer.js
-HALListener.js
 
 .jshintignore
 .jshintrc

@@ -1,0 +1,38 @@
+extends ../layout.pug
+
+block pageCss
+  if pageCss.career_detail
+    link(type="text/css" rel="stylesheet" href=pageCss.career_detail)
+
+block content
+  section(class="job-detail")
+    div(class="container")
+      div(class="job-name") 产品设计师
+        button(class="btn btn-normal") 立刻申请
+
+      div(class="sub-title") 
+        span(class="location") 北京
+        span(class="class") 设计类
+        span(class="type") 全职
+
+      div(class="duty")
+        span(class="title") 您的职责
+        div(class="description")
+          p · 您将与编辑领导层并肩工作，为GameRoot的日常委托故事和每月委托包装制作艺术指导，包括内部设计师和承包商
+          p · 您将利用各种各样的插画家，艺术家，摄影师与项目进行合作
+          p · 您将参加编辑计划会议，并在特殊编辑软件包中跨部门工作，
+          p · 您将建立，沟通并遵守每日，每周和每月节奏的截止日期
+          p · 您将与设计和编辑领导合作，建立并实施“房屋风格”，确保GameRoot具有视觉多样性，但始终如一的优秀风格，可识别
+          p · 您将桥接产品和社论，以建立产品表面（着陆页，再循环单元，页面本身等），以吸引人的和有效的方式展示读者体验并展示最佳媒体
+          p · 您将与品牌和市场营销合作，以确保GameRoot的一致视觉表达
+          p · 您不仅会逐个故事地思考艺术方向，而且会将其作为整体编辑策略的一部分
+
+      div(class="we-wish")
+        span(class="title") 我们希望您
+        div(class="description")
+          p · 有很好的风格和品味
+          p · 拥有4年以上媒体/网络艺术方面的经验
+          p · 是一个能够与其他部门密切合作的有效沟通者
+          p · 可以很容易地制定一个时间表，然后坚持下去
+          p · 很擅长领导和反馈
+          p · 当涉及在线工作时，您拥有无可挑剔的数字设计技能和第六感

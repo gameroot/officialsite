@@ -5,6 +5,12 @@
     "p2": "如果你想加入Game Root 團隊，簡歷請投至：hr@gameroot.io。"
   },
   "jobsSec": {
-    "title": "在招職位"
+    "title": "在招職位",
+    "enter": "了解详情",
+    "productDesigner": "产品设计师",
+    "frontEndEngineer": "前端工程师",
+    "nodeJSEngineer": "Node.js工程师",
+    "devOpsEngineer": "开发运维工程师",
+    "graphicDesigner": "平面-视觉设计师"
   }
 }

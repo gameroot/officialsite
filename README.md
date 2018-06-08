@@ -3,6 +3,9 @@
 ## 简介
 用于开发静态网页的工具
 
+项目启动:  npm run dev
+项目构建:  npm run build
+
 ## client
 
 client 使用webpack打包构建js, less作为css预编译语言，pug作为html模板

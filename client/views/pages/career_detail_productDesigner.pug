@@ -1,0 +1,21 @@
+extends ../layout.pug
+
+block pageCss
+  if pageCss.career_detail
+    link(type="text/css" rel="stylesheet" href=pageCss.career_detail)
+
+block content
+  section(class="job-detail")
+    div(class="container")
+      div(class="job-name") #{locale.career_detail.productDesigner.name}
+        a(role="button" href="mailto:hr@gameroot.io" class="btn btn-normal") #{locale.career_detail.apply}
+
+      div(class="sub-title") 
+        span(class="location") #{locale.career_detail.productDesigner.location}
+        span(class="class") #{locale.career_detail.productDesigner.class}
+        span(class="type") #{locale.career_detail.productDesigner.type}
+
+      div(class="jd") !{locale.career_detail.productDesigner.jdContent}
+
+      div(class="email-part") #{locale.career_detail.pleaseSend}
+          a(href="mailto:hr@gameroot.io") hr@gameroot.io
