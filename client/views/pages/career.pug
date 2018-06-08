@@ -52,19 +52,27 @@ block content
         div(class="job-part col-4")
           div(class="card")
             div(class="name") #{locale.career.jobsSec.productDesigner}
-            a(href="#" class="link") #{locale.career.jobsSec.enter}
+            a(href="/career_detail_productDesigner" class="link") #{locale.career.jobsSec.enter}
 
         div(class="job-part col-4")
           div(class="card")
             div(class="name") #{locale.career.jobsSec.frontEndEngineer}
-            a(href="#" class="link") #{locale.career.jobsSec.enter}
+            a(href="/career_detail_frontEndEngineer" class="link") #{locale.career.jobsSec.enter}
 
         div(class="job-part col-4")
           div(class="card")
             div(class="name") #{locale.career.jobsSec.nodeJSEngineer}
-            a(href="#" class="link") #{locale.career.jobsSec.enter}
+            a(href="/career_detail_nodeJSEngineer" class="link") #{locale.career.jobsSec.enter}
 
         div(class="job-part col-4")
           div(class="card")
             div(class="name") #{locale.career.jobsSec.devOpsEngineer}
-            a(href="#" class="link") #{locale.career.jobsSec.enter}
+            a(href="/career_detail_devOpsEngineer" class="link") #{locale.career.jobsSec.enter}
+
+        div(class="job-part col-4")
+          div(class="card")
+            div(class="name") #{locale.career.jobsSec.graphicDesigner}
+            a(href="/career_detail_graphicDesigner" class="link") #{locale.career.jobsSec.enter}
+
+block pageScript
+  script(src=pageJs.career)

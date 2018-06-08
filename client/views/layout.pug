@@ -22,15 +22,15 @@ html
 
           div(class="collapse navbar-collapse" id="navbarNavDropdown")
             ul(class="navbar-nav")
-              li(class="nav-item active")
-                a(class="nav-link" href="#") #{locale._global.header.home}
+              li#home(class="nav-item")
+                a(class="nav-link" href="/") #{locale._global.header.home}
                   span(class="sr-only") (current)
-              li(class="nav-item")
+              li#update(class="nav-item")
                 a(class="nav-link" href="#") #{locale._global.header.update}
-              li(class="nav-item")
-                a(class="nav-link" href="#") #{locale._global.header.community}
-              li(class="nav-item")
-                a(class="nav-link" href="#") #{locale._global.header.career}
+              li#community(class="nav-item")
+                a(class="nav-link" href="/community") #{locale._global.header.community}
+              li#career(class="nav-item")
+                a(class="nav-link" href="/career") #{locale._global.header.career}
               li(class="nav-item dropdown")
                 a(class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") #{locale._global.lanUsed}
                 div(class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink")

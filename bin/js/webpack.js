@@ -23,12 +23,7 @@ const webpackConfig = {
       use: 'raw-loader'
     }]
   },
-  plugins: [
-    new WrapperPlugin({
-      header: `(function() {\n${websocketClientCode}\n`,
-      footer: '\n})();\n'
-    })
-  ],
+  plugins: [],
   resolve: {
     alias: config.bundleAlias
   },
@@ -39,6 +34,13 @@ const webpackConfig = {
 };
 
 async function compile(compileConfig, outputName) {
+  if (outputName === 'main') {
+    compileConfig = Object.assign({}, compileConfig);
+    compileConfig.plugins = [new WrapperPlugin({
+      header: `(function() {\n${websocketClientCode}\n`,
+      footer: '\n})();\n'
+    })];
+  }
   await fs.ensureDir(outputDir);
   compileConfig.output.filename = outputName + '.js';
   console.log('Start webpack packing', outputName, '...');

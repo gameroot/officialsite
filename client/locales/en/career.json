@@ -7,10 +7,10 @@
   "jobsSec": {
     "title": "在招職位",
     "enter": "了解详情",
-    "productDesigner": "产品设计师",
-    "frontEndEngineer": "前端工程师",
-    "nodeJSEngineer": "Node.js工程师",
-    "devOpsEngineer": "开发运维工程师",
-    "graphicDesigner": "平面-视觉设计师"
+    "productDesigner": "Product Designer",
+    "frontEndEngineer": "前端⼯程師",
+    "nodeJSEngineer": "Node.js⼯程師",
+    "devOpsEngineer": "開發運維工程師",
+    "graphicDesigner": "Graphic Designers"
   }
 }

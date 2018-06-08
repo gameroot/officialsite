@@ -11,7 +11,7 @@ block content
         a(role="button" href="mailto:hr@gameroot.io" class="btn btn-normal") #{locale.career_detail.apply}
 
       div(class="sub-title") 
-        span(class="location") #{locale.career_detail.productDesigner.location}
+        //- span(class="location") #{locale.career_detail.productDesigner.location}
         span(class="class") #{locale.career_detail.productDesigner.class}
         span(class="type") #{locale.career_detail.productDesigner.type}
 
@@ -19,3 +19,6 @@ block content
 
       div(class="email-part") #{locale.career_detail.pleaseSend}
           a(href="mailto:hr@gameroot.io") hr@gameroot.io
+
+block pageScript
+  script(src=pageJs.career_detail)
