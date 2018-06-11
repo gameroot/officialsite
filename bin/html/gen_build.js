@@ -10,7 +10,7 @@ function renderPage(page, FilesMap) {
   const stats = fs.statSync(path.join(config.root, 'client/views/pages', page));
   if (stats.isFile) {
     config.locales.forEach(locale => {
-      let renderFilesMap = Object.assign({locale: localeMap[locale]}, FilesMap);
+      let renderFilesMap = Object.assign({locale: localeMap[locale], renderOption: config.renderOption}, FilesMap);
       const result = pug.compileFile(path.join(config.root, 'client/views/pages', page))(renderFilesMap);
       fs.ensureDirSync(path.join(config.root, 'dist/pages', locale));
       fs.writeFileSync(path.join(config.root, 'dist/pages', locale, page.replace('.pug', '.html')), result);

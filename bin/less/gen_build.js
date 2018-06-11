@@ -27,7 +27,7 @@ module.exports = async function compile(changedFile = null) {
   await fs.ensureDir(outputDir);
 
   // compile base file
-  let file = await _render(`@import './index.less';`, 'main');
+  let file = await _render(`@import './tool.less';@import './index.less';`, 'main');
 
   // compile page file
   const pageFileMap = {};
@@ -37,7 +37,7 @@ module.exports = async function compile(changedFile = null) {
       const filePath = path.join(config.root, 'client/less/pages', page);
       const stats = fs.statSync(filePath);
       if (stats.isFile) {
-        pageFileMap[page.replace('.less', '')] = await _render(`@import './pages/${page}';`, page.replace('.less', ''));
+        pageFileMap[page.replace('.less', '')] = await _render(`@import './tool.less';@import './pages/${page}';`, page.replace('.less', ''));
       }
     });
   }

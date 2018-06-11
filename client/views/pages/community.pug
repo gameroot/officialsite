@@ -40,11 +40,11 @@ block content
           div(class="activity-timeline")
             div(class="activity-group")
               span(class="title") #{locale.community.joinComSec.activityPart.item1.title}
-              span(class="time-location") #{locale.community.joinComSec.activityPart.item2.timeLoc}
+              span(class="time-location") #{locale.community.joinComSec.activityPart.item1.timeLoc}
 
             div(class="activity-group")
               span(class="title") #{locale.community.joinComSec.activityPart.item2.title}
-              span(class="time-location") #{locale.community.joinComSec.activityPart.timeLoc}
+              span(class="time-location") #{locale.community.joinComSec.activityPart.item2.timeLoc}
             
             div(class="activity-group")
               span(class="title") #{locale.community.joinComSec.activityPart.item3.title}
@@ -59,25 +59,25 @@ block content
           img(src="/asset/twitter.svg")
           div(class="link-group")
             span(class="name") TWITTER
-            a(href="#" class="link") http://medium.muz.li
+            a(href=renderOption.twitter.link class="link") #{locale.community.comLinkSec.join}
 
         div(class="link-part col-6")
           img(src="/asset/facebook.svg")
           div(class="link-group")
             span(class="name") FACEBOOK
-            a(href="#" class="link") http://medium.muz.li
+            a(href=renderOption.facebook.link class="link") #{locale.community.comLinkSec.join}
 
         div(class="link-part col-6")
           img(src="/asset/github.svg")
           div(class="link-group")
             span(class="name") GITHUB
-            a(href="#" class="link") http://medium.muz.li
+            a(href=renderOption.github.link class="link") #{locale.community.comLinkSec.join}
 
         div(class="link-part col-6")
           img(src="/asset/telegram.svg")
           div(class="link-group")
             span(class="name") TELEGRAM
-            a(href="#" class="link") http://medium.muz.li
+            a(href=renderOption.telegram.link class="link") #{locale.community.comLinkSec.join}
           
 block pageScript
   script(src=pageJs.community)

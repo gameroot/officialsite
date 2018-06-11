@@ -6,12 +6,12 @@ module.exports = {
   version: pkg.version,
 
   devServer: {
-    host: 'localhost',
+    host: '0.0.0.0',
     port: 3000
   },
 
   locales: [
-    'en', 'zh_cn'
+    'zh_cn'
   ],
 
   defaultLocale: 'zh_cn',
@@ -30,5 +30,25 @@ module.exports = {
 
   bundleAlias: {
     jquery: 'jQuery'
+  },
+
+  // 页面渲染所用的变量
+
+  renderOption: {
+    twitter: {
+      link: 'https://twitter.com/GameRoot365'
+    },
+    github: {
+      link: 'https://github.com/gameroot'
+    },
+    facebook: {
+      link: 'https://www.facebook.com/Game-Root-509842282752394/'
+    },
+    telegram: {
+      link: 'https://telegram.link'
+    },
+    mailchimp: {
+      subscribeUrl: 'https://gameroot.us18.list-manage.com/subscribe/post?u=374f150861abde04549e845f0&amp;id=a8aa5f5051'
+    }
   }
 };

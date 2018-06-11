@@ -1,6 +1,6 @@
 body > .footer {
-  height: 80vh;
-  min-height: 720px;
+  .section-height(0.8);
+
   background-color: #10131B;
   // background-color: blue;
   position: relative;
@@ -14,7 +14,7 @@ body > .footer {
     > .part-title {
       color: #ffffff;
       position: relative;
-      font-size: 48px;
+      font-size: 3rem;
       font-weight: 400;
       top: 10%;
       height: 90px;
@@ -40,26 +40,26 @@ body > .footer {
       height: 56px;
       top: 28%;
 
-      > .email-input {
+      > form > .email-input {
         width: 100%;
         position: relative;
         border-radius: 100px;
-        height: 56px;
+        height: 3.5rem;
         color: #ffffff;
-        font-size: 18px;
+        font-size: 1rem;
         padding: 10px 40px;
         background-color: rgba(0, 0, 0, 0.72);
         outline: none;
         border: none;
       }
 
-      > .btn-subscribe {
-        height: 56px;
+      > form > .btn-subscribe {
+        height: 3.5rem;
         text-align: center;
-        padding: 10px 40px;
+        padding: 0.625rem 2.5rem;
         background-image: linear-gradient(90deg, #008AD4 0%, #4748FF 100%);
         color: #ffffff;
-        font-size: 24px;
+        font-size: 1.5rem;
         position: absolute;
         top: 0;
         right: 0;
@@ -77,9 +77,10 @@ body > .footer {
       top: 32%;
 
       > a > img {
-        height: 45px;
-        width: 45px;
+        height: 3rem;
+        width: 3rem;
         margin-right: 10px;
+        cursor: pointer;
       }
     }
 
@@ -88,7 +89,7 @@ body > .footer {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 24px;
+      font-size: 1.5rem;
       color: #ffffff;
       height: 200px;
       position: relative;

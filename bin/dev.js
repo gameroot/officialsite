@@ -37,7 +37,7 @@ async function dev() {
       changeBusy = true;
       const ext = path.extname(file);
       console.log(ext);
-      if ('.htm' === ext || '.pug' === ext) {
+      if ('.htm' === ext || '.pug' === ext || '.json' === ext) {
         await genHtml(...cacheFiles);
       } else if ('.less' === ext) {
         cacheFiles[1] = await genCss(file);

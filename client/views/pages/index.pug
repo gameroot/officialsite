@@ -13,20 +13,18 @@ block content
         span(class="overview-subtitle") #{locale.index.overviewSection.subTitle}
         div(class="contact-group")
           div
-            a(role="button" class="btn btn-primary btn-email") #{locale.index.overviewSection.emailBtn}
+            a#jumpToSubscribe(role="button" class="btn btn-primary btn-email") #{locale.index.overviewSection.emailBtn}
           span(class="plus-contact")
             span(class="telegram")
-              a
+              a(href=renderOption.telegram.link)
                 img(src="/asset/telegram_no_circle.svg")
               span #{locale.index.overviewSection.joinTele}
 
-            a
+            a(href=renderOption.twitter.link)
               img(src="/asset/twitter.svg")
-            a 
+            a(href=renderOption.github.link)
               img(src="/asset/github.svg")
-            a 
-              img(src="/asset/weibo.svg")
-            a 
+            a(href=renderOption.facebook.link)
               img(src="/asset/facebook.svg")
       img(class="overview-img" src="/asset/index_overview.png")
 
@@ -59,24 +57,24 @@ block content
       div(class="for-player")
         div(class="part-title") #{locale.index.valueSection.forPlayer.partTitle}
         div(class="row")
-          div(class="value-item col")
-            img(class="pre-image img1" src="/asset/for_player1.png")
+          div(class="value-item col-4")
             div(class="words-part")
+              img(class="pre-image img1" src="/asset/for_player1.png")
               div(class="value-item-title") #{locale.index.valueSection.forPlayer.item1.title}
               div(class="value-item-content") 
                 p #{locale.index.valueSection.forPlayer.item1.contentP1}
                 p #{locale.index.valueSection.forPlayer.item1.contentP2}
 
-          div(class="value-item col")
-            img(class="pre-image img2" src="/asset/for_player2.png")
+          div(class="value-item col-4")
             div(class="words-part")
+              img(class="pre-image img2" src="/asset/for_player2.png")
               div(class="value-item-title") #{locale.index.valueSection.forPlayer.item2.title}
               div(class="value-item-content")
                 p #{locale.index.valueSection.forPlayer.item2.content}
 
-          div(class="value-item col")
-            img(class="pre-image img3" src="/asset/for_player3.png")
+          div(class="value-item col-4")
             div(class="words-part")
+              img(class="pre-image img3" src="/asset/for_player3.png")
               div(class="value-item-title") #{locale.index.valueSection.forPlayer.item3.title}
               div(class="value-item-content") 
                 p #{locale.index.valueSection.forPlayer.item3.contentP1}
@@ -84,34 +82,36 @@ block content
 
       div(class="for-developer")
         div(class="part-title") #{locale.index.valueSection.forDeveloper.partTitle}
-        div(class="row")
-          div(class="value-item col-6")
-            span(class="pre-image-bg")
-              img(class="pre-image" src="/asset/for_devloper1.svg")
-            div(class="content")
-              div(class="sub-title") #{locale.index.valueSection.forDeveloper.item1.title}
-              div(class="describe") #{locale.index.valueSection.forDeveloper.item1.content}
+        div(class="group")
+          div(class="row")
+            div(class="value-item col-6")
+              span(class="pre-image-bg")
+                img(class="pre-image" src="/asset/for_devloper1.svg")
+              div(class="content")
+                div(class="sub-title") #{locale.index.valueSection.forDeveloper.item1.title}
+                div(class="describe") #{locale.index.valueSection.forDeveloper.item1.content}
 
-          div(class="value-item col-6")
-            span(class="pre-image-bg")
-              img(class="pre-image" src="/asset/for_devloper2.svg")
-            div(class="content")
-              div(class="sub-title") #{locale.index.valueSection.forDeveloper.item2.title}
-              div(class="describe") #{locale.index.valueSection.forDeveloper.item2.content}
+            div(class="value-item col-6")
+              span(class="pre-image-bg")
+                img(class="pre-image" src="/asset/for_devloper2.svg")
+              div(class="content")
+                div(class="sub-title") #{locale.index.valueSection.forDeveloper.item2.title}
+                div(class="describe") #{locale.index.valueSection.forDeveloper.item2.content}
 
-          div(class="value-item col-6")
-            span(class="pre-image-bg")
-              img(class="pre-image" src="/asset/for_devloper3.svg")
-            div(class="content")
-              div(class="sub-title") #{locale.index.valueSection.forDeveloper.item3.title}
-              div(class="describe") #{locale.index.valueSection.forDeveloper.item3.content}
+          div(class="row")
+            div(class="value-item col-6")
+              span(class="pre-image-bg")
+                img(class="pre-image" src="/asset/for_devloper3.svg")
+              div(class="content")
+                div(class="sub-title") #{locale.index.valueSection.forDeveloper.item3.title}
+                div(class="describe") #{locale.index.valueSection.forDeveloper.item3.content}
 
-          div(class="value-item col-6")
-            span(class="pre-image-bg")
-              img(class="pre-image" src="/asset/for_devloper4.svg")
-            div(class="content")
-              div(class="sub-title") #{locale.index.valueSection.forDeveloper.item4.title}
-              div(class="describe") #{locale.index.valueSection.forDeveloper.item4.content}
+            div(class="value-item col-6")
+              span(class="pre-image-bg")
+                img(class="pre-image" src="/asset/for_devloper4.svg")
+              div(class="content")
+                div(class="sub-title") #{locale.index.valueSection.forDeveloper.item4.title}
+                div(class="describe") #{locale.index.valueSection.forDeveloper.item4.content}
 
   //- section4 creating  TODO
   section(class="creating-section")

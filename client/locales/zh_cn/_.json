@@ -1,9 +1,10 @@
 {
+  "title": "GameRoot",
   "header": {
-    "home": "主页",
+    "home": "主頁",
     "update": "更新",
-    "community": "社区",
-    "career": "职位"
+    "community": "社區",
+    "career": "職位"
   },
 
   "lanUsed": "中文",

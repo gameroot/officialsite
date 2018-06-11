@@ -4,7 +4,9 @@ html
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
     meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
-    title() web dev framework
+    link(rel="icon" href="/asset/logo.ico" type="image/x-icon")
+    <link rel="shortcut icon" href="/asset/logo.ico" type="image/x-icon">
+    title #{locale._global.title}
 
     each css in cssFiles
       link(type="text/css" rel="stylesheet" href=css)
@@ -25,17 +27,17 @@ html
               li#home(class="nav-item")
                 a(class="nav-link" href="/") #{locale._global.header.home}
                   span(class="sr-only") (current)
-              li#update(class="nav-item")
-                a(class="nav-link" href="#") #{locale._global.header.update}
+              //- li#update(class="nav-item")
+              //-   a(class="nav-link" href="#") #{locale._global.header.update}
               li#community(class="nav-item")
                 a(class="nav-link" href="/community") #{locale._global.header.community}
               li#career(class="nav-item")
                 a(class="nav-link" href="/career") #{locale._global.header.career}
-              li(class="nav-item dropdown")
-                a(class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") #{locale._global.lanUsed}
-                div(class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink")
-                  a(class="dropdown-item" href="#") En
-                  a(class="dropdown-item" href="#") 中文
+              //- li(class="nav-item dropdown")
+              //-   a(class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") #{locale._global.lanUsed}
+              //-   div(class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink")
+              //-     //- a(class="dropdown-item" href="#") En
+              //-     a(class="dropdown-item" href="/zh_cn/index") 中文
 
     div(class="content")
       block content
@@ -50,15 +52,16 @@ html
         img(class="footer-bg" src="/asset/footer_bg.svg")
         div(class="part-title") #{locale._global.footer.title}
         div(class="subscribe-group")
-          input(class="email-input" placeholder=locale._global.footer.placeholder)
-          button(class="btn btn-subscribe") #{locale._global.footer.subscribe}
+          form#subscribeForm(action=renderOption.mailchimp.subscribeUrl method="post")
+            input(class="email-input" name="email" placeholder=locale._global.footer.placeholder)
+            a(role="button" onclick="$('#subscribeForm').submit(); return false;" class="btn btn-subscribe") #{locale._global.footer.subscribe}
 
         div(class="community-group")
-          a
+          a(href=renderOption.twitter.link)
             img(class="twitter" src="/asset/twitter.svg")
-          a
+          a(href=renderOption.github.link)
             img(class="github" src="/asset/github.svg")
-          a
+          a(href=renderOption.facebook.link)
             img(class="facebook" src="/asset/facebook.svg")
 
         div(class="copyright") Copyright © 2017-2018 Gameroot.io
