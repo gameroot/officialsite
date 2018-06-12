@@ -1,0 +1,6 @@
+{
+  "name": "Game Root Official Site",
+  "static":{
+    "public":"pages/zh_cn"   
+  }
+}
