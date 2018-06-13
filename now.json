@@ -1,6 +1,9 @@
 {
   "name": "Game Root Official Site",
   "static":{
-    "public":"pages/zh_cn"   
+    "rewrites": [
+      { "source": "/", "destination": "/pages/zh_cn/index.html" },
+      { "source": "/:page", "destination": "/pages/zh_cn/:page.html" }
+    ]
   }
 }

@@ -32,17 +32,7 @@ block content
   section(class="intro-section")
     div(class="container")
       div(class="row")
-        div(class="image-preview col-6")
-          img(src="/asset/index_intro.png")
-          div(class="annotation-group")
-            span(class="annotation-item sdk") #{locale.index.introSection.SDK}
-            span(class="annotation-item virtual") #{locale.index.introSection.virtual}
-            span(class="annotation-item creator") #{locale.index.introSection.creator}
-            span(class="annotation-item game") #{locale.index.introSection.game}
-            span(class="annotation-item market") #{locale.index.introSection.market}
-            
-
-        div(class="intro-group col-6")
+        div(class="intro-group col-sm-12 col-md-6")
           h3(class="title")
             span(class="important") #{locale.index.introSection.title1}
             span #{locale.index.introSection.title2}
@@ -50,6 +40,15 @@ block content
           span(class="subtitle") #{locale.index.introSection.subTitle}
 
           p(class="words")  #{locale.index.introSection.words}
+      
+        div(class="image-preview col-sm-12 col-md-6")
+          img(src="/asset/index_intro.png")
+          div(class="annotation-group")
+            span(class="annotation-item sdk") #{locale.index.introSection.SDK}
+            span(class="annotation-item virtual") #{locale.index.introSection.virtual}
+            span(class="annotation-item creator") #{locale.index.introSection.creator}
+            span(class="annotation-item game") #{locale.index.introSection.game}
+            span(class="annotation-item market") #{locale.index.introSection.market}
 
   //- section3 value
   section(class="value-section")
@@ -57,7 +56,7 @@ block content
       div(class="for-player")
         div(class="part-title") #{locale.index.valueSection.forPlayer.partTitle}
         div(class="row")
-          div(class="value-item col-4")
+          div(class="value-item col-sm-12 col-md-4")
             div(class="words-part")
               img(class="pre-image img1" src="/asset/for_player1.png")
               div(class="value-item-title") #{locale.index.valueSection.forPlayer.item1.title}
@@ -65,14 +64,14 @@ block content
                 p #{locale.index.valueSection.forPlayer.item1.contentP1}
                 p #{locale.index.valueSection.forPlayer.item1.contentP2}
 
-          div(class="value-item col-4")
+          div(class="value-item col-sm-12 col-md-4")
             div(class="words-part")
               img(class="pre-image img2" src="/asset/for_player2.png")
               div(class="value-item-title") #{locale.index.valueSection.forPlayer.item2.title}
               div(class="value-item-content")
                 p #{locale.index.valueSection.forPlayer.item2.content}
 
-          div(class="value-item col-4")
+          div(class="value-item col-sm-12 col-md-4")
             div(class="words-part")
               img(class="pre-image img3" src="/asset/for_player3.png")
               div(class="value-item-title") #{locale.index.valueSection.forPlayer.item3.title}
@@ -84,14 +83,14 @@ block content
         div(class="part-title") #{locale.index.valueSection.forDeveloper.partTitle}
         div(class="group")
           div(class="row")
-            div(class="value-item col-6")
+            div(class="value-item col-sm-12 col-md-6")
               span(class="pre-image-bg")
                 img(class="pre-image" src="/asset/for_devloper1.svg")
               div(class="content")
                 div(class="sub-title") #{locale.index.valueSection.forDeveloper.item1.title}
                 div(class="describe") #{locale.index.valueSection.forDeveloper.item1.content}
 
-            div(class="value-item col-6")
+            div(class="value-item col-sm-12 col-md-6")
               span(class="pre-image-bg")
                 img(class="pre-image" src="/asset/for_devloper2.svg")
               div(class="content")
@@ -99,14 +98,14 @@ block content
                 div(class="describe") #{locale.index.valueSection.forDeveloper.item2.content}
 
           div(class="row")
-            div(class="value-item col-6")
+            div(class="value-item col-sm-12 col-md-6")
               span(class="pre-image-bg")
                 img(class="pre-image" src="/asset/for_devloper3.svg")
               div(class="content")
                 div(class="sub-title") #{locale.index.valueSection.forDeveloper.item3.title}
                 div(class="describe") #{locale.index.valueSection.forDeveloper.item3.content}
 
-            div(class="value-item col-6")
+            div(class="value-item col-sm-12 col-md-6")
               span(class="pre-image-bg")
                 img(class="pre-image" src="/asset/for_devloper4.svg")
               div(class="content")
