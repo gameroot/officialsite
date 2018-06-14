@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "node ./bin/index.js dev",
-    "build": "node ./bin/index.js build"
+    "build": "node ./bin/index.js build",
+    "publish": "npm run build & cd dist & now"
   },
   "author": "ShadowWood",
   "license": "ISC",

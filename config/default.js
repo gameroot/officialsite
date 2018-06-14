@@ -45,7 +45,7 @@ module.exports = {
       link: 'https://www.facebook.com/Game-Root-509842282752394/'
     },
     telegram: {
-      link: 'https://telegram.link'
+      link: 'https://t.me/GamerootExchange'
     },
     mailchimp: {
       subscribeUrl: 'https://gameroot.us18.list-manage.com/subscribe/post?u=374f150861abde04549e845f0&amp;id=a8aa5f5051'

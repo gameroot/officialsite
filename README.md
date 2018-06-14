@@ -1,21 +1,23 @@
-# web devframework
+# GameRoot.io
 
-## 简介
-用于开发静态网页的工具
+The official website of GameRoot.
 
-项目启动:  npm run dev
-项目构建:  npm run build
+## Start
 
-## client
+```shell
+npm install
+```
 
-client 使用webpack打包构建js, less作为css预编译语言，pug作为html模板
-
-## server
-
-dev server基于koa2开发，加入websocket以实现文件更新检测自刷新页面
++ develop: npm run dev
++ build: npm run build
++ publish: npm run publish
 
 ## TODO
 
-+ [ ] 打包构建脚本
-+ [ ] 页面分模块引入js和css 文件
-+ [ ] 优化项目目录结构
++ [x] mobile views
++ [ ] roadmap
++ [ ] cooperative partner
++ [ ] languages:
+  + [x] 繁体中文
+  + [ ] English
++ [ ] more content of community

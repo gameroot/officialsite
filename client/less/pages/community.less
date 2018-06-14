@@ -77,6 +77,9 @@ body > .content {
       }
 
       > .information-part > .row {
+        width: 100%;
+        margin: 0;
+
         > .focus-part,
         > .activity-part {
           height: 100%;
@@ -174,6 +177,7 @@ body > .content {
         > .activity-part {
           @media screen and (max-width: @mobile-max-width) {
             height: 40%;
+            padding: 2rem 5rem;
           }
 
           > .activity-timeline {
@@ -185,7 +189,7 @@ body > .content {
             width: 100%;
 
             @media screen and (max-width: @mobile-max-width) {
-              padding: 2rem 5rem 2rem 5rem;
+              margin-top: 2rem;
             }
 
             > .activity-group {
@@ -194,7 +198,7 @@ body > .content {
               flex-direction: column;
               width: 100%;
               max-height: 100px;
-              justify-content: space-between;
+              justify-content: space-around;
               padding-left: 4px;
 
               > .title {
