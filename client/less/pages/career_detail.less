@@ -8,6 +8,11 @@ body > .content {
       display: flex;
       flex-direction: column;
 
+      @media screen and (max-width: @mobile-max-width) {
+        text-align: center;
+        padding: 8rem 0;
+      }
+
       > .job-name {
         width: 100%;
         display: flex;
@@ -16,6 +21,16 @@ body > .content {
         height: 72px;
         font-size: 3rem;
         color: #ffffff;
+
+        @media screen and (max-width: @mobile-max-width) {
+          flex-direction: column;
+          height: auto;
+          font-size: 2.5rem;
+
+          > .btn.btn-normal {
+            margin: 2rem;
+          }
+        }
       }
 
       > .sub-title {
@@ -27,53 +42,15 @@ body > .content {
         width: 100%;
         color: #ffffff;
 
+        @media screen and (max-width: @mobile-max-width) {
+          justify-content: center;
+        }
+
         > span {
           margin-right: 32px;
-        }
-      }
 
-      > .duty {
-        display: flex;
-        flex-direction: column;
-        margin-top: 100px;
-        color: #ffffff;
-        width: 100%;
-
-        > .title {
-          font-size: 2rem;
-          height: 50px;
-          margin-bottom: 20px;
-        }
-
-        > .description {
-          width: 100%;
-          
-          > p {
-            font-size: 1rem;
-            font-weight: 300;
-          }
-        }
-
-      }
-      > .we-wish {
-        display: flex;
-        flex-direction: column;
-        margin-top: 64px;
-        color: #ffffff;
-        width: 100%;
-
-        > .title {
-          font-size: 2rem;
-          height: 50px;
-          margin-bottom: 40px;
-        }
-
-        > .description {
-          width: 100%;
-          
-          > p {
-            font-size: 1rem;
-            font-weight: 300;
+          @media screen and (max-width: @mobile-max-width) {
+            margin: 0 16px;
           }
         }
       }
@@ -85,8 +62,19 @@ body > .content {
         display: flex;
         flex-direction: column;
 
+        @media screen and (max-width: @mobile-max-width) {
+          margin-top: 2rem;
+          width: 100%;
+        }
+
         > .part {
           margin: 32px 0;
+
+          @media screen and (max-width: @mobile-max-width) {
+            text-align: center;
+            width: 100%;
+            padding: 0 2rem;
+          }
 
           > h4 {
             font-size: 2rem;
@@ -104,6 +92,10 @@ body > .content {
               position: relative;
               padding-left: 8px;
 
+              @media screen and (max-width: @mobile-max-width) {
+                text-align: left;
+              }
+
               &:before {
                 content: ' · ';
                 left: -8px;
@@ -120,6 +112,11 @@ body > .content {
       }
       > .email-part {
         color: #ffffff;
+        font-size: 1.5rem;
+
+        @media screen and (max-width: @mobile-max-width) {
+          text-align: center;
+        }
 
         > a {
           margin-left: 8px;

@@ -6,6 +6,12 @@ body > .footer {
   position: relative;
   overflow: hidden;
 
+  @media screen and (max-width: @mobile-max-width) {
+    height: 50vh;
+    min-height: 330px;
+    max-height: 350px;
+  }
+
   > .container {
     height: 100%;
     position: relative;
@@ -21,6 +27,11 @@ body > .footer {
       width: 100%;
       text-align: center;
       padding-top: 28px;
+
+      @media screen and (max-width: @mobile-max-width) {
+        font-size: 2rem;
+        height: 5rem;
+      }
   
       &:before {
         content: '';

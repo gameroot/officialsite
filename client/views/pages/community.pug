@@ -16,68 +16,70 @@ block content
       div(class="describe") #{locale.community.joinComSec.describe}
 
       div(class="information-part")
-        div(class="focus-part")
-          div(class="part-title") #{locale.community.joinComSec.inforPart.title}
-          div(class="part-content")
-            div(class="content-group")
-              img(src="/asset/community/focus1.png")
-              div(class="content")
-                span(class="title") #{locale.community.joinComSec.inforPart.item2.title}
-                span(class="link")
-                  a(href="#") #{locale.community.joinComSec.inforPart.item1.link1}
-                  a(href="#") #{locale.community.joinComSec.inforPart.item1.link2}
+        div(class="row")
+          div(class="focus-part col-md-7 col-sm-12")
+            div(class="part-title") #{locale.community.joinComSec.inforPart.title}
+            div(class="part-content")
+              div(class="content-group")
+                img(src="/asset/community/focus1.png")
+                div(class="content")
+                  span(class="title") #{locale.community.joinComSec.inforPart.item2.title}
+                  span(class="link")
+                    a(href="#") #{locale.community.joinComSec.inforPart.item1.link1}
+                    a(href="#") #{locale.community.joinComSec.inforPart.item1.link2}
 
-            div(class="content-group")
-              img(src="/asset/community/focus2.png")
-              div(class="content")
-                span(class="title") #{locale.community.joinComSec.inforPart.item2.title}
-                span(class="link")
-                  a(href="#") #{locale.community.joinComSec.inforPart.item2.link1}
-                  a(href="#") #{locale.community.joinComSec.inforPart.item2.link2}
+              div(class="content-group")
+                img(src="/asset/community/focus2.png")
+                div(class="content")
+                  span(class="title") #{locale.community.joinComSec.inforPart.item2.title}
+                  span(class="link")
+                    a(href="#") #{locale.community.joinComSec.inforPart.item2.link1}
+                    a(href="#") #{locale.community.joinComSec.inforPart.item2.link2}
         
-        div(class="activity-part")
-          div(class="part-title") #{locale.community.joinComSec.activityPart.title}
-          div(class="activity-timeline")
-            div(class="activity-group")
-              span(class="title") #{locale.community.joinComSec.activityPart.item1.title}
-              span(class="time-location") #{locale.community.joinComSec.activityPart.item1.timeLoc}
+          div(class="activity-part col-md-5 com-sm-12")
+            div(class="part-title") #{locale.community.joinComSec.activityPart.title}
+            div(class="activity-timeline")
+              div(class="activity-group")
+                span(class="title") #{locale.community.joinComSec.activityPart.item1.title}
+                span(class="time-location") #{locale.community.joinComSec.activityPart.item1.timeLoc}
 
-            div(class="activity-group")
-              span(class="title") #{locale.community.joinComSec.activityPart.item2.title}
-              span(class="time-location") #{locale.community.joinComSec.activityPart.item2.timeLoc}
-            
-            div(class="activity-group")
-              span(class="title") #{locale.community.joinComSec.activityPart.item3.title}
-              span(class="time-location") #{locale.community.joinComSec.activityPart.item3.timeLoc}
+              div(class="activity-group")
+                span(class="title") #{locale.community.joinComSec.activityPart.item2.title}
+                span(class="time-location") #{locale.community.joinComSec.activityPart.item2.timeLoc}
+              
+              div(class="activity-group")
+                span(class="title") #{locale.community.joinComSec.activityPart.item3.title}
+                span(class="time-location") #{locale.community.joinComSec.activityPart.item3.timeLoc}
 
   section(class="community-link-group")
     div(class="container")
       div(class="section-title") #{locale.community.comLinkSec.title}
 
-      div(class="content-part row")
-        div(class="link-part col-6")
-          img(src="/asset/twitter.svg")
-          div(class="link-group")
-            span(class="name") TWITTER
-            a(href=renderOption.twitter.link class="link") #{locale.community.comLinkSec.join}
+      div(class="content-part")
+        div(class="row")
+          div(class="link-part col-md-6 col-sm-12")
+            img(src="/asset/twitter.svg")
+            div(class="link-group")
+              span(class="name") TWITTER
+              a(href=renderOption.twitter.link class="link") #{locale.community.comLinkSec.join}
 
-        div(class="link-part col-6")
-          img(src="/asset/facebook.svg")
-          div(class="link-group")
-            span(class="name") FACEBOOK
-            a(href=renderOption.facebook.link class="link") #{locale.community.comLinkSec.join}
+          div(class="link-part col-md-6 col-sm-12")
+            img(src="/asset/facebook.svg")
+            div(class="link-group")
+              span(class="name") FACEBOOK
+              a(href=renderOption.facebook.link class="link") #{locale.community.comLinkSec.join}
 
-        div(class="link-part col-6")
-          img(src="/asset/github.svg")
-          div(class="link-group")
-            span(class="name") GITHUB
-            a(href=renderOption.github.link class="link") #{locale.community.comLinkSec.join}
+          div(class="link-part col-md-6 col-sm-12")
+            img(src="/asset/github.svg")
+            div(class="link-group")
+              span(class="name") GITHUB
+              a(href=renderOption.github.link class="link") #{locale.community.comLinkSec.join}
 
-        div(class="link-part col-6")
-          img(src="/asset/telegram.svg")
-          div(class="link-group")
-            span(class="name") TELEGRAM
-            a(href=renderOption.telegram.link class="link") #{locale.community.comLinkSec.join}
+          div(class="link-part col-md-6 col-sm-12")
+            img(src="/asset/telegram.svg")
+            div(class="link-group")
+              span(class="name") TELEGRAM
+              a(href=renderOption.telegram.link class="link") #{locale.community.comLinkSec.join}
           
 block pageScript
   script(src=pageJs.community)

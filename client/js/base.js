@@ -1,17 +1,17 @@
 import './header';
 
 (function flexible (window, document) {
-  var docEl = document.documentElement
-  var dpr = window.devicePixelRatio || 1
+  var docEl = document.documentElement;
+  var dpr = window.devicePixelRatio || 1;
 
   // adjust body font size
   function setBodyFontSize () {
-    if (document.body) {
-      document.body.style.fontSize = (12 * dpr) + 'px'
-    }
-    else {
-      document.addEventListener('DOMContentLoaded', setBodyFontSize)
-    }
+    // if (document.body) {
+    //   document.body.style.fontSize = (12 * dpr) + 'px'
+    // }
+    // else {
+    //   document.addEventListener('DOMContentLoaded', setBodyFontSize)
+    // }
   }
   setBodyFontSize();
 
@@ -19,7 +19,7 @@ import './header';
   function setRemUnit () {
     var rem = 16;
 
-    if (docEl.clientWidth <= 1440) {
+    if (docEl.clientWidth < 1600) {
       rem = 14;
     }
 
@@ -27,7 +27,8 @@ import './header';
       rem = 12;
     }
 
-    docEl.style.fontSize = rem + 'px'
+    docEl.style.fontSize = rem + 'px';
+    docEl.style.display = 'block';
   }
 
   setRemUnit()

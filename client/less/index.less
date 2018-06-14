@@ -6,6 +6,7 @@
 }
 
 html {
+  display: none;
   font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
 }
 
@@ -21,6 +22,10 @@ body {
   font-size: 3rem;
   text-align: center;
   padding-top: 28px;
+
+  @media screen and (max-width: @mobile-max-width) {
+    font-size: 2rem;
+  }
 
   &:before {
     content: '';

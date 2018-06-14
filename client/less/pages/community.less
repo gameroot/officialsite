@@ -1,10 +1,14 @@
 body > .content {
   > .team-location {
-    height: 100vh;
     background-image: linear-gradient(135deg, #424E66, #181C26);
-    padding-top: 14%;
-    max-height: 1080px;
-    min-height: 900px;
+    padding-top: 10%;
+
+    .section-height(1);
+
+    @media screen and (max-width: @mobile-max-width) {
+      .section-height(0.4);
+      padding-top: 7rem;
+    }
 
     > .container {
       position: relative;
@@ -26,23 +30,24 @@ body > .content {
         font-size: 3rem;
         text-align: center;
         width: 100%;
-      }
 
-      > .describe {
-        margin-top: 8%;
-        font-size: 3rem;
-        font-weight: 300;
-        text-align: center;
-        width: 80%;
+        @media screen and (max-width: @mobile-max-width) {
+          font-size: 2.5rem;
+        }
       }
     }
   }
 
   > .join-community {
-    height: 100vh;
-    min-height: 900px;
-    max-height: 1200px;
     background-image: linear-gradient(-187deg, #1A202E 0%, #0D1019 100%);
+
+    .section-height(1);
+
+    @media screen and (max-width: @mobile-max-width) {
+      height: 200vh;
+      min-height: 1200px;
+      max-height: 1400px;
+    }
 
     > .container {
       padding: 5% 0;
@@ -50,6 +55,10 @@ body > .content {
       flex-direction: column;
       color: #ffffff;
       height: 100%;
+
+      @media screen and (max-width: @mobile-max-width) {
+        padding: 4rem 0;
+      }
 
       > .describe {
         text-align: center;
@@ -65,22 +74,35 @@ body > .content {
         width: 100%;
         display: flex;
         position: relative;
+      }
 
+      > .information-part > .row {
         > .focus-part,
         > .activity-part {
           height: 100%;
           display: flex;
           flex-direction: column;
 
+          @media screen and (max-width: @mobile-max-width) {
+            padding-top: 3rem;
+          }
+
           > .part-title {
             height: 2.25rem;
             font-size: 1.5rem;
             margin-bottom: 8%;
+
+            @media screen and (max-width: @mobile-max-width) {
+              text-align: center;
+              margin-bottom: 1.5rem;
+            }
           }
         }
 
         > .focus-part {
-          flex: 10;
+          @media screen and (max-width: @mobile-max-width) {
+            height: 60%;
+          }
 
           > .part-content {
             flex: 1;
@@ -88,9 +110,19 @@ body > .content {
             flex-direction: column;
             justify-content: space-between;
 
+            @media screen and (max-width: @mobile-max-width) {
+              padding: 2rem 0;
+            }
+
             > .content-group {
               display: flex;
               height: 131px;
+
+              @media screen and (max-width: @mobile-max-width) {
+                flex-direction: column;
+                height: auto;
+                padding: 0 16px;
+              }
               
               > img {
                 height: 100%;
@@ -103,13 +135,26 @@ body > .content {
                 justify-content: space-between;
                 padding-left: 16px;
 
+                @media screen and (max-width: @mobile-max-width) {
+                  padding-left: 0;
+                }
+
                 > .title {
                   font-size: 1.5rem;
                   color: #ffffff;
                   height: 36px;
+
+                  @media screen and (max-width: @mobile-max-width) {
+                    margin-top: 1rem;
+                    text-align: center;
+                    width: 100%;
+                  }
                 }
 
                 > .link {
+                  @media screen and (max-width: @mobile-max-width) {
+                    text-align: center;
+                  }
                   > a {
                     color: #02adff;
                     font-size: 1rem;
@@ -127,7 +172,9 @@ body > .content {
         }
 
         > .activity-part {
-          flex: 8;
+          @media screen and (max-width: @mobile-max-width) {
+            height: 40%;
+          }
 
           > .activity-timeline {
             border-left: 1px solid #546497;
@@ -136,6 +183,10 @@ body > .content {
             flex-direction: column;
             justify-content: space-between;
             width: 100%;
+
+            @media screen and (max-width: @mobile-max-width) {
+              padding: 2rem 5rem 2rem 5rem;
+            }
 
             > .activity-group {
               flex: 1;
@@ -166,51 +217,60 @@ body > .content {
   }
 
   > .community-link-group {
-    height: 80vh;
-    min-height: 720px;
-    max-height: 920px;
     background-image: linear-gradient(135deg, #424E66, #181C26);
     color: #ffffff;
 
+    .section-height(0.7);
+
+    @media screen and (max-width: @mobile-max-width) {
+      height: 100vh;
+    }
+
     > .container {
-      padding: 7% 0;
+      padding: 5% 0;
       display: flex;
       flex-direction: column;
       height: 100%;
+      justify-content: space-around;
 
+      @media screen and (max-width: @mobile-max-width) {
+        padding: 5rem 0;
+      }
 
       > .content-part {
-        flex: 1;
-        margin-top: 8%;
+        // flex: 1;
+        margin-top: 4rem;
         width: 100%;
         padding: 0 15%;
+      }
 
+      > .content-part > .row {
         > .link-part {
           display: flex;
           padding: 30px;
 
           > img {
-            height: 90px;
-            width: 90px;
+            height: 5rem;
+            width: 5rem;
           }
 
           > .link-group {
             flex: 1;
-            height: 60px;
+            height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding-left: 60px;
+            padding-left: 4rem;
 
             > .name {
               width: 100%;
               color: #ffffff;
-              font-size: 2rem;
+              font-size: 1.5rem;
             }
 
             > .link {
               color: #02adff;
-              font-size: 2rem;
+              font-size: 1.5rem;
             }
           }
         }
