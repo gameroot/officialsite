@@ -15,7 +15,7 @@ npm install
 ## TODO
 
 + [x] mobile views
-+ [ ] roadmap
++ [x] roadmap
 + [ ] cooperative partner
 + [ ] languages:
   + [x] 繁体中文
