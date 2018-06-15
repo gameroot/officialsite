@@ -1,4 +1,4 @@
-{
+module.exports = {
   "overviewSection": {
     "title": "基於區塊鏈的稀有遊戲道具、資產交易和內容分發平台",
     "subTitle": "便捷上鍊，開放交易，去中心化分發",
@@ -56,5 +56,27 @@
   },
   "creatingSection": {
     "title": "我們正在創造"
+  },
+  "roadmapSection": {
+    "title": "路线图",
+    "timeline": [{
+      "time": "2018年Q4",
+      "content": "交易所公测"
+    }, {
+      "time": "2018年Q4",
+      "content": "交易所正式上线"
+    }, {
+      "time": "2018年Q4",
+      "content": "SDK公测"
+    }, {
+      "time": "2019年Q1",
+      "content": "钱包公测"
+    }, {
+      "time": "2019年Q3",
+      "content": "去中心化交易所的公测"
+    }, {
+      "time": "2020年Q1",
+      "content": "去中心化游戏内容分发测试"
+    }]
   }
 }

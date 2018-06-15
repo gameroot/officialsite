@@ -1,7 +1,5 @@
 const path = require('path');
 const fs = require('fs-extra');
-const uglify = require('uglify-es');
-const WrapperPlugin = require('wrapper-webpack-plugin');
 const webpack = require('webpack');
 const config = require('config');
 
@@ -10,7 +8,7 @@ const outputDir = path.join(__dirname, '../../dist/js');
 
 const webpackConfig = {
   entry: path.join(__dirname, '../../client/js/base.js'),
-  mode: 'development',
+  mode: 'production',
   output: {
     path: outputDir
   },

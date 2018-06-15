@@ -13,13 +13,15 @@ config.locales.forEach(locale => {
   }
 
   dirList.forEach(dir => {
-    if (path.extname(dir) !== '.json') {
+    if (path.extname(dir) !== '.json' && path.extname(dir) !== '.js') {
       return ;
     }
     if (dir === '_.json') {
-      i18n[locale]._global = fs.readJsonSync(path.join(localesDir, locale, dir));
+      // i18n[locale]._global = fs.readJsonSync(path.join(localesDir, locale, dir));
+      i18n[locale]._global = require(path.join(localesDir, locale, dir));
     } else {
-      i18n[locale][dir.replace('.json', '')] = fs.readJsonSync(path.join(localesDir, locale, dir));
+      // i18n[locale][dir.replace('.json', '')] = fs.readJsonSync(path.join(localesDir, locale, dir));
+      i18n[locale][dir.replace('.json', '').replace('.js', '')] = require(path.join(localesDir, locale, dir));
     }
   });
 });

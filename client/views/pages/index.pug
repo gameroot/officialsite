@@ -118,6 +118,15 @@ block content
       div(class="title") #{locale.index.creatingSection.title}
       img(class="we-building-img" src="/asset/we_building_zh_cn.png")
 
+  section(class="roadmap-section")
+    div(class="container")
+      div(class="section-title") 路线图
+      ul(class="timeline")
+        each item in locale.index.roadmapSection.timeline
+          li(class="timeline-item")
+            span(class="time") #{item.time}
+            p(class="content") #{item.content}
+
   //- section5 partner
   section(class="partner-section")
     div(class="container")
