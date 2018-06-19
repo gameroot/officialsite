@@ -25,19 +25,19 @@ html
           div(class="collapse navbar-collapse" id="navbarNavDropdown")
             ul(class="navbar-nav")
               li#home(class="nav-item")
-                a(class="nav-link" href="/") #{locale._global.header.home}
+                a(class="nav-link" href="/" + locale._global.lanKey + "/index") #{locale._global.header.home}
                   span(class="sr-only") (current)
               li#update(class="nav-item")
                 a(class="nav-link" href="https://medium.com/@gameroot" target="_blank") #{locale._global.header.update}
               li#community(class="nav-item")
-                a(class="nav-link" href="/community") #{locale._global.header.community}
+                a(class="nav-link" href="/" + locale._global.lanKey + "/community") #{locale._global.header.community}
               li#career(class="nav-item")
-                a(class="nav-link" href="/career") #{locale._global.header.career}
-              //- li(class="nav-item dropdown")
-              //-   a(class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") #{locale._global.lanUsed}
-              //-   div(class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink")
-              //-     //- a(class="dropdown-item" href="#") En
-              //-     a(class="dropdown-item" href="/zh_cn/index") 中文
+                a(class="nav-link" href="/" + locale._global.lanKey + "/career") #{locale._global.header.career}
+              li(class="nav-item dropdown")
+                a(class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") #{locale._global.lanUsed}
+                div(class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink")
+                  a(class="dropdown-item" href="/en/index") En
+                  a(class="dropdown-item" href="/zh_cn/index") 中文
 
     div(class="content")
       block content

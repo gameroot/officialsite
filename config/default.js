@@ -11,7 +11,8 @@ module.exports = {
   },
 
   locales: [
-    'zh_cn'
+    'zh_cn',
+    'en'
   ],
 
   defaultLocale: 'zh_cn',
