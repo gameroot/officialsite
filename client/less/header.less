@@ -59,6 +59,35 @@ body > .header-container > .container {
   
           &.dropdown {
             margin-left: 20px;
+
+            @media screen and (max-width: 768px) {
+              margin-left: 0;
+            }
+
+            > .dropdown-menu {
+              background-color: fade(#000, 50%);
+
+              @media screen and (max-width: 768px) {
+                background-color: transparent;
+                border: none;
+
+                > .dropdown-item {
+                  font-size: 1.2rem;
+                }
+              }
+
+              > .dropdown-item {
+                color: #dddddd;
+                text-align: center;
+
+                &:hover {
+                  background-color: #434e66;
+                  color: #ffffff;
+                }
+              }
+
+            }
+            
           }
         }
       }
