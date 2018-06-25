@@ -1,16 +1,16 @@
 {
-  "title": "歡迎加入GAMEROOT團隊",
+  "title": "Join GameRoot Team", 
   "intro": {
-    "p1": "共建全新的區塊鏈遊戲生態",
-    "p2": "如果你想加入Game Root 團隊，簡歷請投至：hr@gameroot.io。"
+    "p1": "Build a new blockchain game ecology",
+    "p2": "Please send your CV to: hr@gameroot.io"
   },
   "jobsSec": {
-    "title": "在招職位",
-    "enter": "了解詳情",
-    "productDesigner": "產品設計師",
-    "frontEndEngineer": "前端⼯程師",
-    "nodeJSEngineer": "Node.js⼯程師",
-    "devOpsEngineer": "開發運維工程師",
-    "graphicDesigner": "平⾯-視覺設計師"
+    "title": "Open positions",
+    "enter": "more details",
+    "productDesigner": "Product Designer",
+    "frontEndEngineer": "Front-End Engineer",
+    "nodeJSEngineer": "Node.js Developer",
+    "devOpsEngineer": "DevOp Engineer",
+    "graphicDesigner": "Visial Designer"
   }
 }

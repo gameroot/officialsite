@@ -1,51 +1,51 @@
 {
   "teamLocSec": {
-    "title": "我們的團隊遍布世界各地"
+    "title": "Our Team is Spread Across the Continent"
   },
 
   "joinComSec": {
-    "title": "加入社區，分享你的智慧",
-    "describe": "Game Root智能合約SDK，方便遊戲開發者將部分“稀有”遊戲道具等數字資產實現“一鍵上鍊”，在Game Root平台進行交易轉讓，打破單一遊戲/平台內交易的封閉性，盤活玩家的“沉沒遊戲資產。”同時搭建基於IPFS的去中心化分發平台，讓遊戲內容的分發更加公平",
+    "title": "Join Our Community and Share your Ideas",
+    "describe": "Game Root Smart Contract SDK facilitates game developers to implement 'one-click winding' of digital assets such as certain 'rare' game props and transactions on the Game Root platform to break the exclusiveness of transactions within a single game/platform and to revitalize players.  It brings value to game assets and time/effort put into the game and avoids “sunken costs”.  At the same time, a decentralized distribution platform based on IPFS is set up to make the distribution of game content more fair.",
     "inforPart": {
-      "title": "焦點聚焦",
+      "title": "Focus",
       "item1": {
-        "title": "GameRoot區塊鏈實踐日",
-        "link1": "了解詳情",
-        "link2": "現在加入"
+        "title": "GameRoot Venture Business Support Plan",
+        "link1": "Learn More",
+        "link2": "Join Now"
       },
       "item2": {
-        "title": "GameRoot出海創業扶持計劃",
-        "link1": "了解詳情",
-        "link2": "現在加入"
+        "title": "GameRoot Venture Business Support Plan",
+        "link1": "Learn More",
+        "link2": "Join Now"
       },
       "tmpItem1": {
-        "title": "GAMEROOT 遊戲生態基金",
-        "tmpMes": "具體細節即將公佈"
+        "title": "GameRoot Venture Business Support Plan",
+        "tmpMes": "Coming Soon"
       },
       "tmpItem2": {
-        "title": "玩家社區志願者",
-        "tmpMes": "具體細節即將公佈"
+        "title": "Player Commuity Volunteer",
+        "tmpMes": "Coming Soon"
       }
     },
     "activityPart": {
-      "title": "近期活動",
+      "title": "Recent Updates",
       "item1": {
-        "title": "構建基於富媒體大數據的彈性深度學習計算平台",
-        "timeLoc": "5月25-27日 北京"
+        "title": "Building a Flexible Learning/Computer Platform Based on Mass Media Data Pools",
+        "timeLoc": "5/27 Beijing"
       },
       "item2": {
-        "title": "自定義數據處理平台的容器化實踐",
-        "timeLoc": "5月26日 杭州"
+        "title": "Custom Data Processing Platforms",
+        "timeLoc": "5/26 HangZhou"
       },
       "item3": {
-        "title": "直播及存儲移動端網絡優化",
-        "timeLoc": "5月26-29日 貴陽"
+        "title": "Live and Mobile Network Optimization and Storage",
+        "timeLoc": "5/26-29 GuiYang"
       }
     }
   },
 
   "comLinkSec": {
-    "title": "社區和社交媒體",
-    "join": "點擊加入"
+    "title": "Community and Social Media",
+    "join": "follow now"
   }
 }

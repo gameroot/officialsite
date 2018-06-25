@@ -1,18 +1,18 @@
 {
   "title": "GameRoot",
   "header": {
-    "home": "主頁",
-    "update": "更新",
-    "community": "社區",
-    "career": "職位"
+    "home": "Home",
+    "update": "Updates",
+    "community": "Community",
+    "career": "Careers"
   },
 
   "lanUsed": "En",
   "lanKey": "en",
 
   "footer": {
-    "title": "隨時關注我們的更新",
-    "placeholder": "郵箱......",
-    "subscribe": "訂閱"
+    "title": "Stay Up to Date with GameRoot",
+    "placeholder": "Email......",
+    "subscribe": "Subscribe"
   }
 }

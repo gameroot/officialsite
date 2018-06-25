@@ -15,7 +15,7 @@ module.exports = {
     'en'
   ],
 
-  defaultLocale: 'zh_cn',
+  defaultLocale: 'en',
 
   root: path.join(__dirname, '../'),
 
