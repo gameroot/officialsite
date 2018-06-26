@@ -60,22 +60,22 @@ module.exports = {
   "roadmapSection": {
     "title": "Road Map",
     "timeline": [{
-      "time": "2018年Q4",
+      "time": "2018 Q4",
       "content": "GR Exchange beta"
     }, {
-      "time": "2018年Q4",
+      "time": "2018 Q4",
       "content": "GR Exchange release"
     }, {
-      "time": "2018年Q4",
+      "time": "2018 Q4",
       "content": "GR SDK beta"
     }, {
-      "time": "2019年Q1",
+      "time": "2019 Q1",
       "content": "GR wallet beta"
     }, {
-      "time": "2019年Q3",
+      "time": "2019 Q3",
       "content": "Decentralized exchange beta"
     }, {
-      "time": "2020年Q1",
+      "time": "2020 Q1",
       "content": "Decentralized game ditribution platform beta"
     }]
   }
