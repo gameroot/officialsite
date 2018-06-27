@@ -411,6 +411,10 @@ body > .content {
             > .value-item {
               display: flex;
               padding: 0 12px;
+
+              @media screen and (max-width: @mobile-max-width) {
+                align-items: center;
+              }
   
               > .pre-image-bg {
                 height: 8.5rem;
@@ -422,6 +426,10 @@ body > .content {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                @media screen and (max-width: @mobile-max-width) {
+                  top: 0;
+                }
   
                 > .pre-image {
                   position: relative;
@@ -436,12 +444,21 @@ body > .content {
                 padding: 4px 40px;
                 display: flex;
                 flex-direction: column;
+
+                @media screen and (max-width: @mobile-max-width) {
+                  padding-right: 4px;
+                }
   
                 > .sub-title {
                   font-weight: 400;
                   height: 6.25rem;
                   font-size: 2.25rem;
                   margin-bottom: 1.25rem;
+
+                  @media screen and (max-width: @mobile-max-width) {
+                    height: auto;
+                    word-break: break-all;
+                  }
                 }
   
                 > .describe {

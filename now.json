@@ -1,9 +1,9 @@
 {
   "name": "Game Root Official Site",
   "static":{
+    "cleanUrls": false,
     "rewrites": [
       { "source": "/", "destination": "/pages/en/index.html" },
-      { "source": "/:page", "destination": "/pages/en/:page.html" },
       { "source": "/:local/:page", "destination": "/pages/:local/:page.html"}
     ]
   }
