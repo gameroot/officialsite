@@ -2,8 +2,9 @@
   "name": "Game Root Official Site",
   "static":{
     "rewrites": [
-      { "source": "/", "destination": "/pages/zh_cn/index.html" },
-      { "source": "/:page", "destination": "/pages/zh_cn/:page.html" }
+      { "source": "/", "destination": "/pages/en/index.html" },
+      { "source": "/:page", "destination": "/pages/en/:page.html" },
+      { "source": "/:local/:page", "destination": "/pages/:local/:page.html"}
     ]
   }
 }

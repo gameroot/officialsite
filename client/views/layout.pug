@@ -5,8 +5,10 @@ html
     meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
     meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
     link(rel="icon" href="/asset/logo.ico" type="image/x-icon")
-    <link rel="shortcut icon" href="/asset/logo.ico" type="image/x-icon">
-    title #{locale._global.title}
+    link(rel="shortcut icon" href="/asset/logo.ico" type="image/x-icon")
+    title #{locale._global.seo.title}
+    meta(name="keywords" content=locale._global.seo.keywords)
+    meta(name="description" content=locale._global.seo.description)
 
     each css in cssFiles
       link(type="text/css" rel="stylesheet" href=css)
@@ -35,15 +37,12 @@ html
                 a(class="nav-link" href="/" + locale._global.lanKey + "/career") #{locale._global.header.career}
               li(class="nav-item dropdown")
                 a(class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") #{locale._global.lanUsed}
-                div(class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink")
-                  a(class="dropdown-item" href="/en/index") En
-                  a(class="dropdown-item" href="/zh_cn/index") 中文
+                div(class="dropdown-menu lan-list" aria-labelledby="navbarDropdownMenuLink")
+                  a(class="dropdown-item" href="javascript:;" value="en") En
+                  a(class="dropdown-item" href="javascript:;" value="zh_cn") 中文
 
     div(class="content")
       block content
-
-    each js in jsFiles
-      script(src=js)
 
     //- footer
 
@@ -66,4 +65,9 @@ html
 
         div(class="copyright") Copyright © 2017-2018 Gameroot.io
 
+
+    script.
+      window.LOCALE_LAN = '#{locale._global.lanKey}';
+    each js in jsFiles
+      script(src=js)
     block pageScript
