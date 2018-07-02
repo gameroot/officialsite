@@ -58,25 +58,25 @@ module.exports = {
     "title": "我們正在創造"
   },
   "roadmapSection": {
-    "title": "路线图",
+    "title": "路線圖",
     "timeline": [{
       "time": "2018年Q4",
-      "content": "交易所公测"
+      "content": "交易所公測"
     }, {
       "time": "2018年Q4",
-      "content": "交易所正式上线"
+      "content": "交易所正式上線"
     }, {
       "time": "2018年Q4",
-      "content": "SDK公测"
+      "content": "SDK公測"
     }, {
       "time": "2019年Q1",
-      "content": "钱包公测"
+      "content": "錢包公測"
     }, {
       "time": "2019年Q3",
-      "content": "去中心化交易所的公测"
+      "content": "去中心化交易所的公測"
     }, {
       "time": "2020年Q1",
-      "content": "去中心化游戏内容分发测试"
+      "content": "去中心化遊戲內容分發測試"
     }]
   }
 }
