@@ -76,7 +76,7 @@ module.exports = {
       "content": "Decentralized exchange beta"
     }, {
       "time": "2020 Q1",
-      "content": "Decentralized game ditribution platform beta"
+      "content": "Decentralized game distribution platform beta"
     }]
   }
 }

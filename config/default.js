@@ -37,7 +37,7 @@ module.exports = {
 
   renderOption: {
     twitter: {
-      link: 'https://twitter.com/GameRoot365'
+      link: 'https://twitter.com/GameRootEx'
     },
     github: {
       link: 'https://github.com/gameroot'
