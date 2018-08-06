@@ -43,7 +43,7 @@ module.exports = {
       link: 'https://github.com/gameroot'
     },
     facebook: {
-      link: 'https://www.facebook.com/Game-Root-509842282752394/'
+      link: 'https://www.facebook.com/GameRoot'
     },
     telegram: {
       link: 'https://t.me/GamerootExchange'
